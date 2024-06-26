@@ -14,8 +14,8 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         />
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our Shop</h1>
-        <p className="text-xl mb-8">Discover our amazing products!</p>
+        <h1 className="text-4xl font-bold mb-4">Bem vindo ao Grelha e Gole</h1>
+        <p className="text-xl mb-8">Espetaria e Bar!</p>
       </div>
     </div>
   );

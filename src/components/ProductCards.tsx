@@ -49,29 +49,33 @@ const ProductCards = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="">
       <div className="py-16 max-w-7xl mx-auto">
         <Slider {...settings}>
           {products.map((product) => (
             <motion.div
               key={product.id}
-              className="mx-4 sm:mx-2 ml-2"
+              className="mx-4 sm:mx-2 ml-2 relative"
               variants={fadeInUp}
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-gray-200 rounded-lg p-4 text-center shadow-lg mb-8 w-[220px] mx-auto">
-                <div className="w-24 h-24 rounded-full mx-auto mb-4">
-                  <img src={product.image} alt="imagem produto" className="rounded-full w-24 h-24" />
+              <div className="bg-gray-200 rounded-lg p-4 text-center shadow-lg mb-8 w-[220px] mx-auto overflow-hidden">
+                <div className="relative w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 bottom-[-50%] bg-white rounded-full overflow-hidden">
+                    <img src={product.image} alt="imagem produto" className="rounded-full w-full h-full object-cover" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+                <h3 className="text-xl font-semibold mb-0">{product.name}</h3>
+                <p className='text-red-900 mb-1'>R$: 13,70</p>
+                <hr className="my-2 border-gray-400" />
                 <p>{product.description}</p>
                 <a
                   href={product.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-blue-500 rounded-lg hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 transition duration-300 ease-in-out"
+                  className="block bg-red-500 rounded-lg hover:bg-red-700 font-bold py-2 px-4 mt-4 transition duration-300 ease-in-out text-white"
                 >
                   Fazer pedido
                 </a>

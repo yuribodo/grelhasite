@@ -5,14 +5,14 @@ import imageProduct from '../assets/GRELHA E GOLE.jpg';
 import { motion } from 'framer-motion';
 
 const products = [
-  { id: 1, name: 'Espeto de Carne', description: 'Delicioso espeto de carne grelhada.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 2, name: 'Espeto de Frango', description: 'Saboroso espeto de frango temperado.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 3, name: 'Espeto de Linguça', description: 'Linguças grelhadas com tempero especial.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 4, name: 'Picanha na Brasa', description: 'Suculenta picanha assada na brasa.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 5, name: 'Costela de Porco', description: 'Costela de porco defumada e grelhada.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 6, name: 'Frango à Passarinho', description: 'Pedacinhos de frango frito crocante.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 7, name: 'Salmão Grelhado', description: 'Filé de salmão grelhado com ervas finas.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 8, name: 'Maminha na Brasa', description: 'Maminha suculenta assada na brasa.', image: imageProduct, link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 1, name: 'Espeto de Carne', description: 'Delicioso espeto de carne grelhada.', image: imageProduct, price: 'R$ 13,70', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 2, name: 'Espeto de Frango', description: 'Saboroso espeto de frango temperado.', image: imageProduct, price: 'R$ 12,50', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 3, name: 'Espeto de Linguça', description: 'Linguças grelhadas com tempero especial.', image: imageProduct, price: 'R$ 10,90', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 4, name: 'Picanha na Brasa', description: 'Suculenta picanha assada na brasa.', image: imageProduct, price: 'R$ 25,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 5, name: 'Costela de Porco', description: 'Costela de porco defumada e grelhada.', image: imageProduct, price: 'R$ 19,90', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 6, name: 'Frango à Passarinho', description: 'Pedacinhos de frango frito crocante.', image: imageProduct, price: 'R$ 11,50', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 7, name: 'Salmão Grelhado', description: 'Filé de salmão grelhado com ervas finas.', image: imageProduct, price: 'R$ 28,50', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 8, name: 'Maminha na Brasa', description: 'Maminha suculenta assada na brasa.', image: imageProduct, price: 'R$ 22,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
 ];
 
 const ProductCards = () => {
@@ -68,7 +68,7 @@ const ProductCards = () => {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-0">{product.name}</h3>
-                <p className='text-red-900 mb-1'>R$: 13,70</p>
+                <p className='text-red-900 mb-1'>{product.price}</p>
                 <hr className="my-2 border-gray-400" />
                 <p>{product.description}</p>
                 <a

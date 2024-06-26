@@ -23,6 +23,7 @@ const Navbar = () => {
       contatoSection?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
+  
 
   return (
     <motion.div 

@@ -15,7 +15,6 @@ function App() {
       <Hero />
       <ProductCards />
       <About />
-      
       <Contact />
       <Footer />
     </>

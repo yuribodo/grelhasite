@@ -6,11 +6,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import Menu from './pages/Menu.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+  },
+  {
+    path: "/menu",
+    element: <Menu/>
   },
 ]);
 

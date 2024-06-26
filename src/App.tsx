@@ -1,15 +1,16 @@
-import './App.css'
+import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ProductCards from './components/ProductCards';
 
 function App() {
-
-
   return (
     <>
-      <div>
-        <p>dwadsadw</p>
-      </div>
+      <Navbar />
+      <Hero />
+      <ProductCards />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

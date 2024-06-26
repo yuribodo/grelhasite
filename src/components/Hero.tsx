@@ -10,13 +10,13 @@ const Hero = () => {
         <motion.img
           src={logo}
           alt="Logo"
-          className="mx-auto mb-4 w-48 md:w-64"
+          className="mx-auto w-48 md:w-64"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         />
-        <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">Bem vindo ao Grelha e Gole</h1>
-        <p className="text-xl md:text-2xl text-white mb-8">Espetaria e Bar!</p>
+        <h1 className="text-4xl md:text-6xl max-sm:p-4 text-white font-bold mb-2">Grelha e Gole</h1>
+        <p className="text-xl md:text-2xl text-white mb-20">Espetaria e Bar!</p>
       </div>
       <motion.video
         autoPlay

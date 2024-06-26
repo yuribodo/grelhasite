@@ -1,4 +1,3 @@
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -62,23 +61,21 @@ const ProductCards = () => {
               animate="animate"
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-gray-200 rounded-lg p-4 text-center shadow-lg mb-8 w-[200px] md:w-[240px] mx-auto overflow-hidden">
-                <div className="relative w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 bottom-[-50%] bg-white rounded-full overflow-hidden">
-                    <img src={product.image} alt="imagem produto" className="rounded-full w-full h-full object-cover" />
-                  </div>
+              <div className="bg-white rounded-xl p-4 text-center shadow-lg mb-8 w-[240px] mx-auto overflow-hidden border border-gray-300">
+                <div className="relative w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                  <img src={product.image} alt={product.name} className="rounded-full w-full h-full object-cover" />
                 </div>
-                <h3 className="text-xl font-semibold mb-0">{product.name}</h3>
-                <p className='text-red-900 mb-1'>{product.price}</p>
-                <hr className="my-2 border-gray-400" />
-                <p>{product.description}</p>
+                <h3 className="text-lg font-bold mb-2">{product.name}</h3>
+                <p className='text-red-600 text-lg font-semibold mb-2'>{product.price}</p>
+                <hr className="my-2 border-gray-300" />
+                <p className="text-gray-600 mb-4">{product.description}</p>
                 <a
                   href={product.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-red-500 rounded-lg hover:bg-red-700 font-bold py-2 px-4 mt-4 transition duration-300 ease-in-out text-white"
+                  className="block bg-green-600 rounded-full hover:bg-green-700 font-bold py-2 px-4 mt-4 transition duration-300 ease-in-out text-white"
                 >
-                  Fazer pedido
+                  Online order
                 </a>
               </div>
             </motion.div>

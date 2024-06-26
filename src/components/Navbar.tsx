@@ -6,6 +6,24 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const navigate = useNavigate(); // Use useNavigate para navegação
 
+  const handleHomeClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const heroSection = document.querySelector('#hero');
+      heroSection?.scrollIntoView({ behavior: 'smooth' });
+    }, 100)
+    
+  };
+
+  const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    navigate('/');
+    setTimeout(() => {
+      const aboutSection = document.querySelector('#about');
+      aboutSection?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   const handleContatoClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     navigate('/');
@@ -15,16 +33,6 @@ const Navbar = () => {
     }, 100);
   };
 
-  const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    navigate('/');
-    setTimeout(() => {
-      const contatoSection = document.querySelector('#about');
-      contatoSection?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  };
-  
-
   return (
     <motion.div 
       initial={{ y: -100 }}
@@ -33,7 +41,7 @@ const Navbar = () => {
       className="bg-gray-800 text-white p-4 text-center fixed top-0 w-full z-50"
     >
       <nav className="flex justify-center space-x-4">
-        <Link to="/" className="hover:text-gray-400">Home</Link>
+        <a href="#" onClick={handleHomeClick} className="hover:text-gray-400">Home</a>
         <Link to="/menu" className="hover:text-gray-400">Menu</Link>
         <a href="/about" onClick={handleAboutClick} className=' hover:text-gray-400'>Sobre</a>
         <a href="/contato" onClick={handleContatoClick} className=' hover:text-gray-400'>Contato</a>

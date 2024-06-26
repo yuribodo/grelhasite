@@ -1,4 +1,4 @@
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram} from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -17,12 +17,7 @@ const Contact = () => {
                   @grelhaegole
                 </a>
               </div>
-              <div className="flex items-center space-x-4">
-                <FaWhatsapp className="text-green-600" size={24} />
-                <a href="https://wa.me/seunumero" target="_blank" rel="noopener noreferrer" className="text-green-600">
-                  Seu número de WhatsApp
-                </a>
-              </div>
+              
             </div>
           </div>
 
@@ -32,16 +27,16 @@ const Contact = () => {
             <table className="w-full">
               <tbody>
                 <tr>
-                  <td className="px-4 py-2">Segunda - Sexta:</td>
-                  <td className="px-4 py-2">08:00 - 18:00</td>
+                  <td className="px-4 py-2">Segunda:</td>
+                  <td className="px-4 py-2">17h:30 - 23h:30</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-2">Sábado:</td>
-                  <td className="px-4 py-2">09:00 - 13:00</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2">Domingo:</td>
+                  <td className="px-4 py-2">Terça:</td>
                   <td className="px-4 py-2">Fechado</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">Quarta a Domingo:</td>
+                  <td className="px-4 py-2">17h:30 - 23h:30</td>
                 </tr>
               </tbody>
             </table>

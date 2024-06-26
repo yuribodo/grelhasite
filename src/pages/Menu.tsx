@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import Menuespetinho from '../assets/CARDAPIO GRELHA_page-0001.jpg';
 import Menubebidas from '../assets/CARDAPIO GRELHA_page-0002.jpg';
 
+
+
 const Menu = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-black">

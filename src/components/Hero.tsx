@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import logo from '../assets/logo.png';
 import video2 from '../assets/video2grelha.mp4';
@@ -9,14 +10,13 @@ const Hero = () => {
         <motion.img
           src={logo}
           alt="Logo"
-          className="mx-auto mb-4"
-          style={{ width: '200px' }}
+          className="mx-auto mb-4 w-48 md:w-64"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         />
-        <h1 className="text-4xl text-white font-bold mb-4">Bem vindo ao Grelha e Gole</h1>
-        <p className="text-xl text-white mb-8">Espetaria e Bar!</p>
+        <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">Bem vindo ao Grelha e Gole</h1>
+        <p className="text-xl md:text-2xl text-white mb-8">Espetaria e Bar!</p>
       </div>
       <motion.video
         autoPlay

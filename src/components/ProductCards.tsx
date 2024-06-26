@@ -1,3 +1,4 @@
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -50,7 +51,7 @@ const ProductCards = () => {
 
   return (
     <div className="">
-      <div className="py-16 max-w-7xl mx-auto">
+      <div className="py-8 md:py-16 max-w-7xl mx-auto">
         <Slider {...settings}>
           {products.map((product) => (
             <motion.div
@@ -61,7 +62,7 @@ const ProductCards = () => {
               animate="animate"
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-gray-200 rounded-lg p-4 text-center shadow-lg mb-8 w-[220px] mx-auto overflow-hidden">
+              <div className="bg-gray-200 rounded-lg p-4 text-center shadow-lg mb-8 w-[200px] md:w-[240px] mx-auto overflow-hidden">
                 <div className="relative w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
                   <div className="absolute top-0 left-0 right-0 bottom-[-50%] bg-white rounded-full overflow-hidden">
                     <img src={product.image} alt="imagem produto" className="rounded-full w-full h-full object-cover" />

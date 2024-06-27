@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const Contact = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Dispara apenas uma vez quando o componente entra no viewport
-    threshold: 0.5, // Define o limiar de visibilidade
+    threshold: 0.3, // Define o limiar de visibilidade
   });
 
   const variants = {

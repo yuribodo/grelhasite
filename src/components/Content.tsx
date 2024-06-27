@@ -75,9 +75,23 @@ const Content = () => {
               </p>
             </motion.div>
           </div>
+          
+          
         </motion.div>
       </div>
+      {/* Botão "Faça seu pedido" */}
+            <a href="https://delivery.yooga.app/grelhaegole/tabs/home" target="_blank" rel="noopener noreferrer">
+            <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-full mt-8 mx-auto block animate-bounce shadow-2xl"
+                >
+                    Faça seu pedido
+            </motion.button>
+            </a>
+
     </motion.div>
+    
   );
 }
 

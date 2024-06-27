@@ -95,7 +95,7 @@ const ProductCards = () => {
               <h3 className="text-lg font-bold mb-2">{product.name}</h3>
               <p className='text-red-600 text-lg font-semibold mb-2'>{product.price}</p>
               <hr className="my-2 border-gray-300" />
-              <p className="text-gray-600 mb-4">{product.description}</p>
+              <p className="text-gray-600 mb-4 font-semibold">{product.description}</p>
               <a
                 href={product.link}
                 target="_blank"

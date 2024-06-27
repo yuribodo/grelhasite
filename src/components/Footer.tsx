@@ -36,7 +36,7 @@ const Footer = () => {
           Desenvolvido por{' '}
           <motion.a 
             href="https://marioyuri.com" 
-            className="text-yellow-400 hover:text-yellow-500 underline decoration-slice"
+            className="text-yellow-400 hover:text-yellow-500 underline decoration-wavy"
             target="_blank" 
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: "#FFD700" }}
@@ -46,7 +46,7 @@ const Footer = () => {
           </motion.a>
         </motion.p>
         <motion.div 
-          className="flex space-x-6"
+          className="flex space-x-6 mb-6"
           initial={{ y: 50 }}
           animate={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 120, delay: 0.6 }}
@@ -59,6 +59,20 @@ const Footer = () => {
             whileHover={{ scale: 1.2 }}
           >
             <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
+          </motion.a>
+        </motion.div>
+        <motion.div 
+          initial={{ y: 50 }}
+          animate={{ y: 0 }}
+          transition={{ type: 'spring', stiffness: 120, delay: 0.8 }}
+        >
+          <motion.a 
+            href="https://www.instagram.com/marioyurimota" 
+            className="bg-yellow-400 text-gray-900 py-2 px-4 rounded-full hover:bg-yellow-500"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Entre em Contato
           </motion.a>
         </motion.div>
       </div>

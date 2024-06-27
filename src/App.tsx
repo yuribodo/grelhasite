@@ -5,6 +5,7 @@ import ProductCards from './components/ProductCards';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Content from './components/Content';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <ProductCards />
       <About />
+      <Content/>
       <Contact />
       <Footer />
     </>

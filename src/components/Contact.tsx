@@ -8,7 +8,8 @@ const Contact = () => {
           {/* Informações de Contato */}
           <div className="w-full md:w-1/2 md:border-l-4 md:border-pink-600 pl-4 md:pl-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Endereço</h2>
-            <p className="text-lg mb-4">Endereço: 📍Av Calama 5658, Flodoaldo Pontes Pinto!</p>
+            <p className="text-lg">Endereço: 📍Av Calama 5658, Flodoaldo Pontes Pinto!</p>
+            <p className="text-lg mb-4">Antigo Chop do 4 </p>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Contato</h2>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">

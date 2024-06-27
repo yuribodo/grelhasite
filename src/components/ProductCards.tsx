@@ -2,17 +2,24 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import imageProduct from '../assets/GRELHA E GOLE.jpg';
+import tulipa from '../assets/tulipadefrango.jpg'
+import frango from '../assets/Espetofrnago.jpg'
+import calabresa from '../assets/calabresa2.jpg'
+import linguica from '../assets/Espetolinguica.jpg'
+import aalcatrabacon from '../assets/alcatrabacon.jpg'
+import carnesol from '../assets/carnesol.jpg'
+import frangobacon from '../assets/frangobacon.jpg'
 import { motion } from 'framer-motion';
 
 const products = [
-  { id: 1, name: 'Espeto de Carne', description: 'Delicioso espeto de carne grelhada.', image: imageProduct, price: 'R$ 13,70', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 2, name: 'Espeto de Frango', description: 'Saboroso espeto de frango temperado.', image: imageProduct, price: 'R$ 12,50', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 3, name: 'Espeto de Linguça', description: 'Linguças grelhadas com tempero especial.', image: imageProduct, price: 'R$ 10,90', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 4, name: 'Picanha na Brasa', description: 'Suculenta picanha assada na brasa.', image: imageProduct, price: 'R$ 25,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 5, name: 'Costela de Porco', description: 'Costela de porco defumada e grelhada.', image: imageProduct, price: 'R$ 19,90', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 6, name: 'Frango à Passarinho', description: 'Pedacinhos de frango frito crocante.', image: imageProduct, price: 'R$ 11,50', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 7, name: 'Salmão Grelhado', description: 'Filé de salmão grelhado com ervas finas.', image: imageProduct, price: 'R$ 28,50', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
-  { id: 8, name: 'Maminha na Brasa', description: 'Maminha suculenta assada na brasa.', image: imageProduct, price: 'R$ 22,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 1, name: 'Carne (Alcatra)', description: 'Delicioso espeto de carne grelhada.', image: imageProduct, price: 'R$ 10,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 2, name: 'Espeto de Frango', description: 'Saboroso espeto de frango temperado.', image: frango, price: 'R$ 9,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 3, name: 'Tulipa de Frango', description: 'Delicioso Espeto de Tulipa de Frango.', image: tulipa, price: 'R$ 12,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 4, name: 'Espeto de Calabresa', description: 'Delicioso espeto de Calabresa.', image: calabresa, price: 'R$ 9,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 5, name: 'Linguiça Apimentada', description: 'Saborosa Linguiça Apimentada.', image: linguica, price: 'R$ 9,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 6, name: 'Carne de Sol', description: 'Pedacinhos de frango frito crocante.', image: carnesol, price: 'R$ 15,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 7, name: 'Frango C/ Bacon', description: 'Filé de salmão grelhado com ervas finas.', image: frangobacon, price: 'R$ 15,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
+  { id: 8, name: 'Alcatra C/ Bacon', description: 'Maminha suculenta assada na brasa.', image: aalcatrabacon, price: 'R$ 17,00', link: 'https://delivery.yooga.app/grelhaegole/tabs/home' },
 ];
 
 const ProductCards = () => {
@@ -43,10 +50,24 @@ const ProductCards = () => {
     ],
   };
 
-  const cardHover = {
+  const cardVariants = {
+    initial: {
+      opacity: 0,
+      scale: 0.9,
+    },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
     hover: {
       scale: 1.05,
-      transition: { duration: 0.3 },
+      transition: {
+        duration: 0.3,
+      },
     },
   };
 
@@ -57,13 +78,13 @@ const ProductCards = () => {
           <motion.div
             key={product.id}
             className="mx-4 sm:mx-2 ml-2 relative"
-            variants={cardHover}
+            variants={cardVariants}
             initial="initial"
             whileHover="hover"
             animate="animate"
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-white rounded-xl  p-4 text-center  shadow-2xl mb-8 w-[240px] mx-auto overflow-hidden border border-gray-300">
+            <div className="bg-white rounded-xl p-4 text-center shadow-2xl mb-8 w-[240px] mx-auto overflow-hidden border border-gray-300">
               <div className="relative w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
                 <img
                   src={product.image}

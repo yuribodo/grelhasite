@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 
 const Content = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Dispara apenas uma vez quando o componente entra no viewport
-    threshold: 0.5, // Define o limiar de visibilidade
+    triggerOnce: true,
+    threshold: 0.5,
   });
 
   return (
@@ -27,7 +27,7 @@ const Content = () => {
           <img
             src={mainImage}
             alt="Imagem do Conteúdo"
-            className="rounded-lg  max-w-full h-auto md:max-w-md shadow-2xl"
+            className="rounded-lg max-w-full h-auto md:max-w-md shadow-2xl"
           />
         </motion.div>
         

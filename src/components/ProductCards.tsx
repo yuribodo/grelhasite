@@ -100,7 +100,7 @@ const ProductCards = () => {
                 href={product.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-green-600 rounded-full hover:bg-green-700 font-bold py-2 px-4 mt-4 transition duration-300 ease-in-out text-white"
+                className="block shadow-xl bg-green-600 rounded-full hover:bg-green-700 font-bold py-2 px-4 mt-4 transition duration-300 ease-in-out text-white"
               >
                 Faça seu Pedido
               </a>

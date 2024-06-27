@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import logo from '../assets/logo.png';
 import video2 from '../assets/video2grelha.mp4';

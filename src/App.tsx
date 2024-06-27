@@ -12,13 +12,17 @@ import Content from './components/Content';
 function App() {
   return (
     <>
-      <Navbar />
+    <Navbar />
+    <div >
+      
       <Hero />
       <ProductCards />
       <About />
       <Content/>
       <Contact />
       <Footer />
+    </div>
+      
     </>
   );
 }
